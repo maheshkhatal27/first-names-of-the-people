@@ -1,7 +1,8 @@
-const namesObj = require("./country/states/city/index");
+const peopleNames = require("../country/state/city/index");
+const getFirstNames = require("../utilities/utils/index");
 
-const getPeopleInCity = (namesObj) => {
-  return list.map((eachPerson) => eachPerson.firstName);
+const getPeopleInCity = (peopleNames) => {
+  return getFirstNames(peopleNames);
 };
 
 module.exports = getPeopleInCity;
